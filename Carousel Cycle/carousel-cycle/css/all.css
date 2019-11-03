@@ -1,0 +1,39 @@
+/* cycle carousel basic styles */
+.cycle-gallery {
+	position: relative;
+}
+.cycle-gallery .mask {
+	position: relative;
+	overflow: hidden;
+	width: 600px;
+}
+.cycle-gallery .mask .slideset {
+	width: 99999px;
+	float: left;
+}
+.cycle-gallery .mask .slide {
+	width: 600px;
+	float: left;
+}
+.cycle-gallery .mask .slide.active {
+	z-index: 1;
+}
+.cycle-gallery {
+	position: relative;
+}
+.cycle-gallery .mask {
+	position: relative;
+	overflow: hidden;
+	width: 600px;
+}
+.cycle-gallery .mask .slideset {
+	width: 99999px;
+	float: left;
+}
+.cycle-gallery .mask .slide {
+	width: 600px;
+	float: left;
+}
+.cycle-gallery .mask .slide.active {
+	z-index: 1;
+}

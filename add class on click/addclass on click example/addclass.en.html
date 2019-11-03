@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="Download-Settings" content="['js/addclass.js']" />
+	<title>AddClass</title>
+	<link rel="stylesheet" type="text/css" href="css/addclass.css" />
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.addclass.js"></script>
+</head>
+<body>
+<div id="article">
+	<h1>Add class on click</h1>
+	<div class="live-example">
+		<p>Example 1. Add class when clicking on &lt;div&gt;.</p>
+		<pre class="javascript">
+			jQuery('div.div-class').clickClass({
+				classAdd: 'div-add-class'
+			});
+		</pre>
+		<div class="div-class box">&lt;div&gt; for click</div>
+	</div>
+	<div class="live-example">
+		<p>Example 2. Add class on parent when clicking on &lt;a&gt;</p>
+		<pre class="javascript">
+			jQuery('a.a-class').clickClass({
+				classAdd: 'div-parent-add-class',
+				addToParent: true
+			});
+		</pre>
+		<div class="box">
+			<a href="#" class="a-class">&lt;a&gt; for click</a>
+		</div>
+	</div>
+</div>
+</body>
+</html>

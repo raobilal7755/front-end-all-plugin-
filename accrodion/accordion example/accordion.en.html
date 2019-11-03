@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Accordion</title>
+	<link rel="stylesheet" type="text/css" href="css/accordion.css" />
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.accordion.js"></script>
+</head>
+<body>
+<div id="article">
+	<h1>Accordion (Slide effect, Multilevel)</h1>
+	<p>Slide effect initialization:</p>
+	
+	<h2>Script usage</h2>
+	<p>There are the following options in the script:</p>
+	<pre class="javascript">
+		jQuery('ul.accordion').slideAccordion({
+			activeClass:'open',      // active class for the open state
+			opener:'&gt;a.opener',      // opener selector
+			slider:'&gt;div.slide',     // accordion's drop-down selector
+			collapsible:false,       // allow to close accordion's active element
+			animSpeed: 300           // accordion's animation speed
+		});
+	</pre>
+	
+	<h2>Accordion example (click the titles)</h2>
+	<div class="live-example">
+		<h3>Standard accordion</h3>
+		<ul class="accordion simple-accordion">
+			<li class="active">
+				<a href="#" class="opener">opener 1</a>
+				<div class="slide">
+					<p>Slide content 1<br />
+					Lorem ipsum</p>
+				</div>
+			</li>
+			<li>
+				<a href="#" class="opener">opener 2</a>
+				<div class="slide">
+					<p>Slide content 2</p>
+				</div>
+			</li>
+			<li>
+				<a href="#" class="opener">opener 3</a>
+				<div class="slide">
+					<p>Slide content 3
+					Lorem ipsum<br />
+					dolor sit amet</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="live-example">
+		<h3>Multilevel accordion</h3>
+		<ul class="accordion multilevel-accordion">
+			<li>
+				<a href="#" class="opener">opener 1</a>
+				<div class="slide">
+					<ul>
+						<li>
+							<a class="opener" href="#">Sub Item 1</a>
+							<div class="slide">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dui neque, tempor in, fermentum vel, rutrum aliquam, mi.</p>
+							</div>
+						</li>
+						<li>
+							<a class="opener" href="#">Sub Item 2</a>
+							<div class="slide">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dui neque, tempor in, fermentum vel, rutrum aliquam, mi.</p>
+							</div>
+						</li>
+						<li>
+							<a class="opener" href="#">Sub Item 3</a>
+							<div class="slide">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dui neque, tempor in, fermentum vel, rutrum aliquam, mi.</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="#" class="opener">opener 2</a>
+				<div class="slide">
+					<p>Slide content 2</p>
+				</div>
+			</li>
+			<li>
+				<a href="#" class="opener selected">opener 3</a>
+				<div class="slide">
+					<p>Slide content 3
+					Lorem ipsum<br />
+					dolor sit amet</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>

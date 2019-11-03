@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Open-Close</title>
+	<link rel="stylesheet" type="text/css" href="css/openclose.css" />
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.openclose.js"></script>
+</head>
+<body>
+<div id="article">
+	<h1>Open-Close (Slide and Fade effects)</h1>
+	<p>Slide effect initialization:</p>
+	
+	
+	<h2>Script usage</h2>
+	<p>There are the following options in the script:</p>
+	<pre class="javascript">
+		jQuery('div.toggle-block').openClose({
+			addClassBeforeAnimation: true,     // change "active" class before the navigation
+			activeClass:'active',              // active class for open state
+			opener:'.opener',                  // link opener selector
+			slider:'.slide',                   // selector of the sliding block
+			animSpeed: 400,                    // animation speed (400ms = 0,4s)
+			effect:'fade',                     // effect "fade", "slide" or "none"
+			event:'click'                      // event for action
+		});
+	</pre>
+	
+	<h2>Open-Close example (click the titles)</h2>
+	<div class="live-example">
+		<h3>Slide effect example</h3>
+		<div class="toggle-block slide">
+			<a class="opener" href="#"><span>+ View More</span><em>- View Less</em></a>
+			<div class="slide">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dui neque, tempor in, fermentum vel, rutrum aliquam, mi. In quis massa adipiscing urna consequat mollis. Maecenas et leo. Suspendisse iaculis odio. In ac eros. Quisque elementum, justo non mattis pellentesque, odio nibh euismod dolor, quis scelerisque metus lacus consequat nisi. Sed nec turpis. Aenean ultrices purus dapibus orci. Fusce erat. Vivamus quis dolor vitae mi vulputate mollis. Sed tellus elit, tempus et, semper a, tincidunt in, justo.</p>
+			</div>
+		</div>
+	</div>
+	<div class="live-example">
+		<h3>Fade effect example</h3>
+		<div class="toggle-block fade">
+			<a class="opener" href="#"><span>+ View More</span><em>- View Less</em></a>
+			<div class="slide">
+				<p>Vestibulum tincidunt turpis eget enim porta volutpat. Ut dapibus pulvinar erat. Sed eget libero nec leo consequat egestas. Etiam tempus ante eu urna. Phasellus egestas varius est. Nulla venenatis faucibus quam. Nunc purus ipsum, pharetra vel, cursus nec, rutrum in, turpis. Nam ornare dolor eget nisl. Aliquam erat volutpat. Curabitur et dolor vitae magna porttitor bibendum. Proin ipsum elit, molestie eget, pellentesque at, eleifend non, erat. Donec pede. Donec arcu nibh, vulputate et, dictum in, convallis at, nulla. Curabitur et elit. Praesent urna elit, facilisis et, dignissim in, imperdiet et, metus. Nullam magna dui, viverra non, feugiat eget, convallis non, massa.</p>
+			</div>
+		</div>
+	</div>
+	<div class="live-example">
+		<h3>Simple example without effect</h3>
+		<div class="toggle-block none">
+			<a class="opener" href="#"><span>+ View More</span><em>- View Less</em></a>
+			<div class="slide">
+				<p>Proin tincidunt, orci eu consectetur interdum, enim tellus imperdiet odio, id porttitor enim pede sit amet erat. Aenean vitae dolor in nisi pharetra facilisis. Aenean laoreet eros ac tellus condimentum porttitor. Nam pretium vehicula mi. Phasellus ornare mi et tortor. Fusce commodo sapien. Donec ac massa ut lorem luctus vulputate. Nulla eu tellus placerat mi vulputate tempus. Etiam lectus. Pellentesque pharetra libero et dui. Integer sem urna, dapibus ac, cursus eget, hendrerit ut, mauris. In sed lorem. Sed ac ligula. Sed in lorem ac lectus porttitor sodales. Maecenas lacinia. Donec bibendum sagittis metus. Sed tincidunt tortor ac quam. Quisque a magna. In iaculis venenatis leo.</p>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

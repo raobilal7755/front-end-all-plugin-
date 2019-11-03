@@ -1,0 +1,35 @@
+/* slideshow basic styles */
+.slideshow {
+	position: relative;
+	height: 200px;
+}
+.slideshow .slide {
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	top: 0;
+}
+.slideshow .slide.active {
+	z-index: 2;
+}
+.slideshow.not-enough-slides a.btn-prev,
+.slideshow.not-enough-slides a.btn-next {
+	visibility: hidden;
+}
+.slideshow {
+	position: relative;
+	height: 200px;
+}
+.slideshow .slide {
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	top: 0;
+}
+.slideshow .slide.active {
+	z-index: 2;
+}
+.slideshow.not-enough-slides a.btn-prev,
+.slideshow.not-enough-slides a.btn-next {
+	visibility: hidden;
+}

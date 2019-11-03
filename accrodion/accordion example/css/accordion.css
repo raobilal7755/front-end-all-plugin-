@@ -1,0 +1,47 @@
+.example-list {
+	overflow: hidden;
+	margin: 0 0 50px;
+	width: 100%;
+}
+.accordion {
+	padding:0;
+	margin:0;
+	list-style:none;
+	width:200px;
+}
+.accordion li {
+	border:1px solid #000;
+	margin : 0 0 -1px;
+}
+.accordion .opener {
+	display:block;
+	color:#000;
+	height:1%;
+	text-decoration:none;
+	line-height:30px;
+	padding:0 10px;
+	background:#999;
+}
+.accordion li.active .opener,
+.accordion li.active li.active .opener {
+	background: #aaf;
+}
+.accordion .active .slide .opener {
+	background:#999;
+}
+.accordion p {
+	margin:0;
+	padding:10px;
+	background:#CCC;
+}
+.accordion .slide {
+	width: 198px;
+}
+.accordion .slide .slide{
+	width: 176px;
+}
+.accordion ul {
+	list-style: none;
+	padding: 0 0 0 20px;
+	margin: 0;
+}
